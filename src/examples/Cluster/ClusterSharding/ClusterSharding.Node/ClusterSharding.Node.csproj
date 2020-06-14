@@ -5,11 +5,30 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>$(NetCoreTestVersion)</TargetFramework>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+  <!--<ItemGroup>
+    <None Remove="Customers.cs.orz" />
+    <None Remove="MessageExtractor.cs.orz" />
+  </ItemGroup>-->
+  <ItemGroup>
+    <None Include="Customers.cs.orz" />
+    <None Include="MessageExtractor.cs.orz" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.Core" Version="4.7.2" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\contrib\cluster\Akka.Cluster.Sharding\Akka.Cluster.Sharding.csproj" />
     <ProjectReference Include="..\..\..\..\contrib\persistence\Akka.Persistence.Sqlite\Akka.Persistence.Sqlite.csproj" />
     <ProjectReference Include="..\..\..\..\contrib\serializers\Akka.Serialization.Hyperion\Akka.Serialization.Hyperion.csproj" />
+    <ProjectReference Include="..\..\..\..\cust\cust.fsproj" />
   </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="powershell &quot;rm -ErrorAction SilentlyContinue -for bin\Debug\netcoreapp3.1\store.db&quot;" />
+  </Target>
 
 </Project>

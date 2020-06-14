@@ -7,6 +7,7 @@
 
 using System;
 using System.Linq;
+using System.Reflection;
 using System.Threading;
 using Akka.Actor;
 using Akka.Cluster.Sharding;
@@ -14,6 +15,8 @@ using Akka.Cluster.Tools.Singleton;
 using Akka.Configuration;
 using Akka.Util;
 using ClusterSharding.Node.AutomaticJoin;
+
+
 
 namespace ClusterSharding.Node
 {
@@ -71,7 +74,7 @@ namespace ClusterSharding.Node
                 try
                 {
                     automaticCluster.Join();
-
+                    //Assembly.LoadFrom(@"Z:\akka.net\src\cust\bin\Debug\netcoreapp3.1\cust.dll");
                     RunExample(system);
 
                     Console.ReadLine();
@@ -109,7 +112,7 @@ namespace ClusterSharding.Node
             {
                 var customer = PickRandom(customers);
                 var item = PickRandom(items);
-                var message = new ShardEnvelope(customer, new Customer.PurchaseItem(item));
+                var message = new ShardEnvelope(customer, new PurchaseItem(item));
 
                 shardRegion.Tell(message);
             });

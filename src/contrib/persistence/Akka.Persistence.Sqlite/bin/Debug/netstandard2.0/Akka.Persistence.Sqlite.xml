@@ -1,0 +1,307 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Akka.Persistence.Sqlite</name>
+    </assembly>
+    <members>
+        <member name="T:Akka.Persistence.Sqlite.ConnectionContext">
+            <summary>
+            This class has been made to make memory connections safe. In SQLite shared memory database exists as long, as there exists at least one opened connection to it.
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.ConnectionContext.Remember(System.String)">
+            <summary>
+            TBD
+            </summary>
+            <param name="connectionString">TBD</param>
+            <exception cref="T:System.ArgumentNullException">
+            This exception is thrown when the specified <paramref name="connectionString"/> is undefined.
+            </exception>
+            <returns>TBD</returns>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.ConnectionContext.Forget(System.String)">
+            <summary>
+            TBD
+            </summary>
+            <param name="connectionString">TBD</param>
+        </member>
+        <member name="T:Akka.Persistence.Sqlite.SqlitePersistence">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.SqlitePersistence.DefaultConfiguration">
+            <summary>
+            Returns a default configuration for akka persistence SQLite-based journals and snapshot stores.
+            </summary>
+            <returns>TBD</returns>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.SqlitePersistence.Get(Akka.Actor.ActorSystem)">
+            <summary>
+            TBD
+            </summary>
+            <param name="system">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="F:Akka.Persistence.Sqlite.SqlitePersistence.DefaultJournalConfig">
+            <summary>
+            Journal-related settings loaded from HOCON configuration.
+            </summary>
+        </member>
+        <member name="F:Akka.Persistence.Sqlite.SqlitePersistence.DefaultSnapshotConfig">
+            <summary>
+            Snapshot store related settings loaded from HOCON configuration.
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.SqlitePersistence.#ctor(Akka.Actor.ExtendedActorSystem)">
+            <summary>
+            TBD
+            </summary>
+            <param name="system">TBD</param>
+        </member>
+        <member name="T:Akka.Persistence.Sqlite.SqlitePersistenceProvider">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.SqlitePersistenceProvider.CreateExtension(Akka.Actor.ExtendedActorSystem)">
+            <summary>
+            TBD
+            </summary>
+            <param name="system">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="T:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournalSetup">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournalSetup.#ctor(Akka.Configuration.Config)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournalSetup" /> class.
+            </summary>
+            <param name="config">Config object used to obtain Journal settings</param>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournalSetup.#ctor(System.String,System.Int32,System.Int32,System.Int32,System.Boolean,System.TimeSpan,System.Data.IsolationLevel,Akka.Persistence.Sql.Common.Journal.CircuitBreakerSettings,Akka.Persistence.Sql.Common.Journal.ReplayFilterSettings,Akka.Persistence.Sql.Common.Journal.QueryConfiguration,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournalSetup" /> class.
+            </summary>
+            <param name="connectionString">The connection string used to connect to the database.</param>
+            <param name="maxConcurrentOperations">The maximum number of batch operations allowed to be executed at the same time.</param>
+            <param name="maxBatchSize">The maximum size of single batch of operations to be executed over a single <see cref="T:System.Data.Common.DbConnection"/>.</param>
+            <param name="maxBufferSize">The maximum size of requests stored in journal buffer.</param>
+            <param name="autoInitialize">
+            If set to <c>true</c>, the journal executes all SQL scripts stored under the
+            <see cref="P:Akka.Persistence.Sql.Common.Journal.BatchingSqlJournal`2.Initializers"/> collection prior
+            to starting executing any requests.
+            </param>
+            <param name="connectionTimeout">The maximum time given for executed <see cref="T:System.Data.Common.DbCommand"/> to complete.</param>
+            <param name="isolationLevel">The isolation level of transactions used during query execution.</param>
+            <param name="circuitBreakerSettings">
+            The settings used by the <see cref="T:Akka.Pattern.CircuitBreaker"/> when for executing request batches.
+            </param>
+            <param name="replayFilterSettings">The settings used when replaying events from database back to the persistent actors.</param>
+            <param name="namingConventions">The naming conventions used by the database to construct valid SQL statements.</param>
+            <param name="defaultSerializer">The serializer used when no specific type matching can be found.</param>
+        </member>
+        <member name="T:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournal">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournal.#ctor(Akka.Configuration.Config)">
+            <summary>
+            TBD
+            </summary>
+            <param name="config">TBD</param>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournal.#ctor(Akka.Persistence.Sqlite.Journal.BatchingSqliteJournalSetup)">
+            <summary>
+            TBD
+            </summary>
+            <param name="setup">TBD</param>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournal.Initializers">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournal.PreStart">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournal.PostStop">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.BatchingSqliteJournal.CreateConnection(System.String)">
+            <summary>
+            TBD
+            </summary>
+            <param name="connectionString">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="T:Akka.Persistence.Sqlite.Journal.SqliteJournal">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="F:Akka.Persistence.Sqlite.Journal.SqliteJournal.Extension">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.SqliteJournal.#ctor(Akka.Configuration.Config)">
+            <summary>
+            TBD
+            </summary>
+            <param name="journalConfig">TBD</param>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Journal.SqliteJournal.QueryExecutor">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Journal.SqliteJournal.JournalConfigPath">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.SqliteJournal.CreateDbConnection(System.String)">
+            <summary>
+            TBD
+            </summary>
+            <param name="connectionString">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.SqliteJournal.PreStart">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.SqliteJournal.PostStop">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="T:Akka.Persistence.Sqlite.Journal.SqliteQueryExecutor">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.SqliteQueryExecutor.#ctor(Akka.Persistence.Sql.Common.Journal.QueryConfiguration,Akka.Serialization.Serialization,Akka.Persistence.Sql.Common.Journal.ITimestampProvider)">
+            <summary>
+            TBD
+            </summary>
+            <param name="configuration">TBD</param>
+            <param name="serialization">TBD</param>
+            <param name="timestampProvider">TBD</param>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Journal.SqliteQueryExecutor.CreateEventsJournalSql">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Journal.SqliteQueryExecutor.CreateMetaTableSql">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Journal.SqliteQueryExecutor.ByTagSql">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Journal.SqliteQueryExecutor.CreateCommand(System.Data.Common.DbConnection)">
+            <summary>
+            TBD
+            </summary>
+            <param name="connection">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="T:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotQueryExecutor">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotQueryExecutor.#ctor(Akka.Persistence.Sql.Common.Snapshot.QueryConfiguration,Akka.Serialization.Serialization)">
+            <summary>
+            TBD
+            </summary>
+            <param name="configuration">TBD</param>
+            <param name="serialization">TBD</param>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotQueryExecutor.InsertSnapshotSql">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotQueryExecutor.CreateSnapshotTableSql">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotQueryExecutor.CreateCommand(System.Data.Common.DbConnection)">
+            <summary>
+            TBD
+            </summary>
+            <param name="connection">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotQueryExecutor.SetTimestampParameter(System.DateTime,System.Data.Common.DbCommand)">
+            <summary>
+            TBD
+            </summary>
+            <param name="timestamp">TBD</param>
+            <param name="command">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotQueryExecutor.ReadSnapshot(System.Data.Common.DbDataReader)">
+            <summary>
+            TBD
+            </summary>
+            <param name="reader">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="T:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotStore">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="F:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotStore.Extension">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotStore.#ctor(Akka.Configuration.Config)">
+            <summary>
+            TBD
+            </summary>
+            <param name="snapshotConfig">TBD</param>
+        </member>
+        <member name="P:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotStore.QueryExecutor">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotStore.CreateDbConnection(System.String)">
+            <summary>
+            TBD
+            </summary>
+            <param name="connectionString">TBD</param>
+            <returns>TBD</returns>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotStore.PreStart">
+            <summary>
+            TBD
+            </summary>
+        </member>
+        <member name="M:Akka.Persistence.Sqlite.Snapshot.SqliteSnapshotStore.PostStop">
+            <summary>
+            TBD
+            </summary>
+        </member>
+    </members>
+</doc>

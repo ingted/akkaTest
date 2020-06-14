@@ -165,13 +165,15 @@ namespace Akka.Serialization
 
             _serializerDetails = system.Settings.Setup.Get<SerializationSetup>()
                 .Select(x => x.CreateSerializers(system)).GetOrElse(ImmutableHashSet<SerializerDetails>.Empty);
-
+            var i = 0;
             foreach (var kvp in serializersConfig)
             {
                 var serializerTypeName = kvp.Value.GetString();
+                Console.WriteLine("serializerTypeName: {0}", serializerTypeName);
                 var serializerType = Type.GetType(serializerTypeName);
                 if (serializerType == null)
                 {
+                    Console.WriteLine("idx: {0}", i);
                     system.Log.Warning("The type name for serializer '{0}' did not resolve to an actual Type: '{1}'", kvp.Key, serializerTypeName);
                     continue;
                 }

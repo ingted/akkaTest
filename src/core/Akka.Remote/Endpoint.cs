@@ -1927,10 +1927,12 @@ namespace Akka.Remote
                             }
                             catch (SerializationException e)
                             {
+                                Console.WriteLine("err se");
                                 LogTransientSerializationError(ackAndMessage.MessageOption, e);
                             }
                             catch (ArgumentException e)
                             {
+                                Console.WriteLine("err ae");
                                 LogTransientSerializationError(ackAndMessage.MessageOption, e);
                             }
                             catch (Exception e)

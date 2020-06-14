@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Incrementalist.Cmd</id>
+    <version>0.2.2</version>
+    <authors>Petabridge</authors>
+    <owners>Petabridge</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://cmd.petabridge.com/articles/install/license.html</licenseUrl>
+    <projectUrl>https://github.com/petabridge/Incrementalist</projectUrl>
+    <iconUrl>https://petabridge.com/images/logo.png</iconUrl>
+    <description>.NET Core global tool for determining how to run incremental builds based on the current Git diff.</description>
+    <releaseNotes>Maintenance release: Incrementalist v0.2.2
+Updated Roslyn version to 3.4.0
+Updated Libgit2Sharp version to 0.26.2</releaseNotes>
+    <copyright>Copyright © 2015-2019 Petabridge</copyright>
+    <packageTypes>
+      <packageType name="DotnetTool" />
+    </packageTypes>
+  </metadata>
+</package>

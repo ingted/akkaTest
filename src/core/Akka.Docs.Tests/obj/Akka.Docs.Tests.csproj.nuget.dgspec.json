@@ -1,0 +1,850 @@
+{
+  "format": 1,
+  "restore": {
+    "Z:\\akka.net\\src\\core\\Akka.Docs.Tests\\Akka.Docs.Tests.csproj": {}
+  },
+  "projects": {
+    "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Metrics\\Akka.Cluster.Metrics.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Metrics\\Akka.Cluster.Metrics.csproj",
+        "projectName": "Akka.Cluster.Metrics",
+        "projectPath": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Metrics\\Akka.Cluster.Metrics.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Metrics\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka.Cluster\\Akka.Cluster.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.Cluster\\Akka.Cluster.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Diagnostics.Process": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Tools\\Akka.Cluster.Tools.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Tools\\Akka.Cluster.Tools.csproj",
+        "projectName": "Akka.Cluster.Tools",
+        "projectPath": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Tools\\Akka.Cluster.Tools.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Tools\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka.Cluster\\Akka.Cluster.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.Cluster\\Akka.Cluster.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka.Coordination\\Akka.Coordination.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.Coordination\\Akka.Coordination.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\contrib\\testkits\\Akka.TestKit.Xunit2\\Akka.TestKit.Xunit2.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\contrib\\testkits\\Akka.TestKit.Xunit2\\Akka.TestKit.Xunit2.csproj",
+        "projectName": "Akka.TestKit.Xunit2",
+        "projectPath": "Z:\\akka.net\\src\\contrib\\testkits\\Akka.TestKit.Xunit2\\Akka.TestKit.Xunit2.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\contrib\\testkits\\Akka.TestKit.Xunit2\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\core\\Akka.Cluster\\Akka.Cluster.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\core\\Akka.Cluster\\Akka.Cluster.csproj",
+        "projectName": "Akka.Cluster",
+        "projectPath": "Z:\\akka.net\\src\\core\\Akka.Cluster\\Akka.Cluster.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\core\\Akka.Cluster\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka.Remote\\Akka.Remote.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.Remote\\Akka.Remote.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\core\\Akka.Coordination\\Akka.Coordination.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\core\\Akka.Coordination\\Akka.Coordination.csproj",
+        "projectName": "Akka.Coordination",
+        "projectPath": "Z:\\akka.net\\src\\core\\Akka.Coordination\\Akka.Coordination.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\core\\Akka.Coordination\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\core\\Akka.Docs.Tests\\Akka.Docs.Tests.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\core\\Akka.Docs.Tests\\Akka.Docs.Tests.csproj",
+        "projectName": "Akka.Docs.Tests",
+        "projectPath": "Z:\\akka.net\\src\\core\\Akka.Docs.Tests\\Akka.Docs.Tests.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\core\\Akka.Docs.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461",
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Metrics\\Akka.Cluster.Metrics.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Metrics\\Akka.Cluster.Metrics.csproj"
+              },
+              "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Tools\\Akka.Cluster.Tools.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Tools\\Akka.Cluster.Tools.csproj"
+              },
+              "Z:\\akka.net\\src\\contrib\\testkits\\Akka.TestKit.Xunit2\\Akka.TestKit.Xunit2.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\contrib\\testkits\\Akka.TestKit.Xunit2\\Akka.TestKit.Xunit2.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka.Persistence\\Akka.Persistence.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.Persistence\\Akka.Persistence.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka.Streams\\Akka.Streams.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.Streams\\Akka.Streams.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj"
+              }
+            }
+          },
+          "net461": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Metrics\\Akka.Cluster.Metrics.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Metrics\\Akka.Cluster.Metrics.csproj"
+              },
+              "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Tools\\Akka.Cluster.Tools.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\contrib\\cluster\\Akka.Cluster.Tools\\Akka.Cluster.Tools.csproj"
+              },
+              "Z:\\akka.net\\src\\contrib\\testkits\\Akka.TestKit.Xunit2\\Akka.TestKit.Xunit2.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\contrib\\testkits\\Akka.TestKit.Xunit2\\Akka.TestKit.Xunit2.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka.Persistence\\Akka.Persistence.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.Persistence\\Akka.Persistence.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka.Streams\\Akka.Streams.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.Streams\\Akka.Streams.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj"
+              },
+              "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        },
+        "net461": {
+          "dependencies": {
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[4.14.0, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\core\\Akka.Persistence\\Akka.Persistence.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\core\\Akka.Persistence\\Akka.Persistence.csproj",
+        "projectName": "Akka.Persistence",
+        "projectPath": "Z:\\akka.net\\src\\core\\Akka.Persistence\\Akka.Persistence.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\core\\Akka.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.12.3, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\core\\Akka.Remote\\Akka.Remote.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\core\\Akka.Remote\\Akka.Remote.csproj",
+        "projectName": "Akka.Remote",
+        "projectPath": "Z:\\akka.net\\src\\core\\Akka.Remote\\Akka.Remote.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\core\\Akka.Remote\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "DotNetty.Handlers": {
+              "target": "Package",
+              "version": "[0.6.0, )"
+            },
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.12.3, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\core\\Akka.Streams\\Akka.Streams.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\core\\Akka.Streams\\Akka.Streams.csproj",
+        "projectName": "Akka.Streams",
+        "projectPath": "Z:\\akka.net\\src\\core\\Akka.Streams\\Akka.Streams.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\core\\Akka.Streams\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Google.Protobuf": {
+              "target": "Package",
+              "version": "[3.12.3, )"
+            },
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Reactive.Streams": {
+              "target": "Package",
+              "version": "[1.0.2, )"
+            },
+            "System.Reflection.TypeExtensions": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj",
+        "projectName": "Akka.TestKit",
+        "projectPath": "Z:\\akka.net\\src\\core\\Akka.TestKit\\Akka.TestKit.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\core\\Akka.TestKit\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj": {
+                "projectPath": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj": {
+      "version": "1.4.4",
+      "restore": {
+        "projectUniqueName": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj",
+        "projectName": "Akka",
+        "projectPath": "Z:\\akka.net\\src\\core\\Akka\\Akka.csproj",
+        "packagesPath": "C:\\Users\\anibal\\.nuget\\packages\\",
+        "outputPath": "Z:\\akka.net\\src\\core\\Akka\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "Z:\\akka.net\\src\\NuGet.Config",
+          "C:\\Users\\anibal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.SourceLink.GitHub": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            },
+            "System.Collections.Immutable": {
+              "target": "Package",
+              "version": "[1.7.1, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
