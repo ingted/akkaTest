@@ -29,9 +29,10 @@ namespace Akka.Remote
         /// <returns>System.Object.</returns>
         public static object Deserialize(ExtendedActorSystem system, SerializedMessage messageProtocol)
         {
+            int a = messageProtocol.SerializerId;
             return system.Serialization.Deserialize(
                 messageProtocol.Message.ToByteArray(),
-                messageProtocol.SerializerId,
+                a,
                 !messageProtocol.MessageManifest.IsEmpty ? messageProtocol.MessageManifest.ToStringUtf8() : null);
         }
 

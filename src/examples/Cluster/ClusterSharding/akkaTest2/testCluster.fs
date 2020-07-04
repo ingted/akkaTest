@@ -68,13 +68,14 @@ let confCluster systemName port portSeed1 portSeed2 =
                   # when node cannot be reached within 10 sec, mark is as down
                   auto-down-unreachable-after = 300s
                   sharding {
-                    least-shard-allocation-strategy.rebalance-threshold = 3
+                    least-shard-allocation-strategy.rebalance-threshold = 10
                   }
                 }
             }
         }
         """ port systemName portSeed1 systemName portSeed2 //systemName systemName systemName
-    conf.WithFallback(ClusterSingletonManager.DefaultConfig())
+    //conf.WithFallback(ClusterSingletonManager.DefaultConfig())
+    conf
 let clusterSystem sysName p1 ps1 ps2 = System.create sysName <| confCluster sysName p1 ps1 ps2 
 
 type EchoServer =
@@ -89,10 +90,9 @@ type EchoServer =
 let cs01 = clusterSystem "test" 4001 4001 4002
 let cs02 = clusterSystem "test" 4002 4001 4002
 
-let system = 
-    clusterSystem "test" 4003 4001 4002
+let system = clusterSystem "test" 4003 4001 4002
 
-let cluster = Cluster.Get(system)
+//let cluster = Cluster.Get(system)
 
 let sharding = ClusterSharding.Get(system)
 
@@ -118,7 +118,6 @@ type PurchaseItem () =
         PurchaseItem ()
         then
             this.PurchaseItem(itm)
-
 
 type ItemPurchased () =
     member val ItemName = Unchecked.defaultof<string> with get, set
@@ -167,4 +166,6 @@ let main argv =
             entityProps = Props.Create<Customer>(),
             settings = ClusterShardingSettings.Create(system),
             messageExtractor = new MessageExtractor(10))
+    Threading.Thread.Sleep(5000)
+    let s = Console.ReadLine()
     0 // return an integer exit code

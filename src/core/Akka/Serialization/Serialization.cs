@@ -294,6 +294,8 @@ namespace Akka.Serialization
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void AddSerializer(Serializer serializer)
         {
+            int a = serializer.Identifier;
+            _serializersById.Add(a, serializer);
             _serializersById.Add(serializer.Identifier, serializer);
         }
 
@@ -305,7 +307,9 @@ namespace Akka.Serialization
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public void AddSerializer(string name, Serializer serializer)
         {
-            _serializersById.Add(serializer.Identifier, serializer);
+            //Console.WriteLine("added serializer: " + name);
+            int a = serializer.Identifier;
+            _serializersById.Add(a, serializer);
             _serializersByName.Add(name, serializer);
         }
 

@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2013-2020 Akka.NET Team")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Hyperion serializer for Akka.NET")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.4.4.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.4.4+3a6ddc89d8a881143ef9a5d960b5861648e1f29f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.4.4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Akka.Serialization.Hyperion")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Akka.Serialization.Hyperion")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.4.4.0")]

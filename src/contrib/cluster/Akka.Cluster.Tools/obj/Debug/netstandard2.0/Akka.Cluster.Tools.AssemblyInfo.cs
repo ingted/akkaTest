@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("Copyright © 2013-2020 Akka.NET Team")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Distributed publish/subscribe, client and singleton support for Akka.NET cluster")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.4.4.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.4.4+3a6ddc89d8a881143ef9a5d960b5861648e1f29f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.4.4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Akka.Cluster.Tools")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Akka.Cluster.Tools")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.4.4.0")]

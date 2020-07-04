@@ -21,3 +21,4 @@ Z:\akka.net\src\core\Akka\obj\Debug\netstandard2.0\Akka.csproj.CopyComplete
 Z:\akka.net\src\core\Akka\obj\Debug\netstandard2.0\Akka.dll
 Z:\akka.net\src\core\Akka\obj\Debug\netstandard2.0\Akka.xml
 Z:\akka.net\src\core\Akka\obj\Debug\netstandard2.0\Akka.pdb
+Z:\akka.net\src\core\Akka\obj\Debug\netstandard2.0\Akka.csprojAssemblyReference.cache
